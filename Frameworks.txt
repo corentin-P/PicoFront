@@ -1,3 +1,4 @@
-Framework frontend : Vue.js 
+Framework frontend : Vue.js avec bootstrap / scss 
+    https://www.youtube.com/watch?v=DcEkrjdQW-8&t=886s
 
 Framework bakend : Node.js

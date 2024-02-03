@@ -1,5 +1,6 @@
 <template>
     <h1>Bye world</h1>
+    
 </template>
 
 <script setup>

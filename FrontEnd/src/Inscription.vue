@@ -3,9 +3,8 @@
   
   <!-- HTML -->
   <Header page_name="Accueil"/> <!--importé dans script--> 
-  <Carousel />
-  <Box title="Actualités du club" description="blabla"/>
-  <p>Contenu du site</p>
+  <Box title="S'inscrire?" description="blablabla"/>
+  <p>Contenu du site2</p>
   <!-- Affichage d'une variable: {{ text }}-->
   <Footer />
 </template>
