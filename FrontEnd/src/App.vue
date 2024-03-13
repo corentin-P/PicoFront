@@ -24,6 +24,6 @@
 </script>
 
 
-<style scoped>
+<style>
   @import 'bootstrap/dist/css/bootstrap.css'
 </style>

@@ -28,3 +28,7 @@ $navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://w
 $navbar-light-toggler-border-color: rgba(var(--#{$prefix}emphasis-color-rgb), .15);
 $navbar-light-brand-color:          $navbar-light-active-color;
 $navbar-light-brand-hover-color:    $navbar-light-active-color;
+
+.navbar-title {
+    margin-top: auto;
+}

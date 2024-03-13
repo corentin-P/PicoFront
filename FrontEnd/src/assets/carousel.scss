@@ -1,0 +1,13 @@
+@import "main.scss";
+
+.carousel-inner {
+    background-color: #ddd; 
+    max-height: 30em;
+}
+
+.carousel-item img{
+    width: auto;
+    max-height: 30em;
+    margin: auto;
+    display: block;
+}

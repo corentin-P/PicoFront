@@ -1,14 +1,11 @@
 <template>
-    <nav class="navbar navbar-expand-lg" style="background-color: #bbebfd">
+    <nav class="navbar navbar-expand-lg" >
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img src="!/images/logo.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-                {{name}}
+                <img src="/images/logo.jpg" alt="Logo" width="40" height=auto class="d-inline-block align-text-top">   
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
             <div class="collapse navbar-collapse" id="navbar">
+                <h3 class = "navbar-title">{{name}}</h3>
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="inscription.html">{{inscription}}</a>
