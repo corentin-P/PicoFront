@@ -29,6 +29,6 @@ $navbar-light-toggler-border-color: rgba(var(--#{$prefix}emphasis-color-rgb), .1
 $navbar-light-brand-color:          $navbar-light-active-color;
 $navbar-light-brand-hover-color:    $navbar-light-active-color;
 
-.navbar-title {
-    margin-top: auto;
+.navbar-brand {
+    display: flex;
 }

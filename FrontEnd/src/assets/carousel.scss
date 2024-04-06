@@ -1,13 +1,24 @@
 @import "main.scss";
 
 .carousel-inner {
-    background-color: #ddd; 
-    max-height: 30em;
+    background-color: $color-background-carousel; 
+    height: $size-carousel;
 }
 
 .carousel-item img{
     width: auto;
-    max-height: 30em;
+    max-height: $size-carousel;
     margin: auto;
     display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .carousel-item img {
+        width: $size-carousel;
+    }
+
+    .carousel-inner {
+        display: flex;
+        align-items: center;
+    }
 }
