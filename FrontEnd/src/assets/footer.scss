@@ -1,0 +1,68 @@
+@import "main.scss";
+
+.legal-notice a {
+    color: $color-text-footer;
+}
+
+.legal-notice a:hover {
+    color: $color-links-hover-footer;
+}
+
+.privacy-policy a {
+    color: $color-text-footer;
+}
+
+.privacy-policy a:hover {
+    color: $color-links-hover-footer;
+}
+
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $color-background-footer;
+    color: $color-text-footer;
+}
+
+.contact {
+    display: flex;
+    margin-left: 10%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.logo-social-networks {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.legal-notice {
+    margin-top: 20px;
+    margin: auto;
+}
+
+
+.privacy-policy {
+    margin-top: 20px;
+    margin-right: 10%;
+}
+
+@media only screen and (min-width: 1024px) {
+    .footer {
+        display: flex;
+    }
+
+    .logo-social-networks {
+        margin-top: 5px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .legal-notice {
+        margin-left: 10%;
+    }
+    
+    
+    .privacy-policy {
+        margin-left: 10%;
+    }
+}
