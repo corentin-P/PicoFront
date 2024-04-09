@@ -13,19 +13,19 @@
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="inscription.html">{{inscription}}</a>
+                        <a class="nav-link" href="registration.html">{{inscription}}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">{{trainings}}</a>
+                        <a class="nav-link" href="trainings.html">{{trainings}}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">{{competitions}}</a>
+                        <a class="nav-link" href="tournament.html">{{competitions}}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">{{images}}</a>
+                        <a class="nav-link" href="gallery.html">{{images}}</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">{{about}}</a>
+                        <a class="nav-link" href="about.html">{{about}}</a>
                     </li>
                 </ul>
             </div>
@@ -35,7 +35,6 @@
 
 
 <script setup>
-    defineProps(['page_name'])
     let name = 'Open Mind';
     let inscription = 'Devenir Membre';
     let trainings = 'Entrainements';

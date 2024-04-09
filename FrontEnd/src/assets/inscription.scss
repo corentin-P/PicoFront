@@ -1,0 +1,27 @@
+@import 'main.scss';
+
+.center {
+    text-align: center;
+}
+
+.column1 {
+    margin-left: 20%;   
+}
+
+.column2 {
+    margin-left: 15%;   
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        display: flex;
+    }
+
+    .column1 {
+        width: $box-size;
+    }
+
+    .column2 {
+        width: $box-size;
+    }
+}

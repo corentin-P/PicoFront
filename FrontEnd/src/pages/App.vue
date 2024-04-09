@@ -3,7 +3,7 @@
   
   <!-- HTML -->
   <header>
-    <Header page_name="Accueil" /> <!--importé dans script--> 
+    <Header /> 
     <Carousel />
   </header>
   <body>
