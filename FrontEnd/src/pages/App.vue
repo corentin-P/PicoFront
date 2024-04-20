@@ -1,10 +1,9 @@
 // html
 <template>
-  
-  <!-- HTML -->
   <header>
     <Header /> 
-    <Carousel />
+    <h1>Open Mind</h1>
+    <Carousel :images="carouselImages"/>
   </header>
   <body>
     <Boxes :contents="BoxesContents"/>
@@ -12,16 +11,16 @@
   <footer>
     <Footer />
   </footer>
-
 </template>
 
 
 <script setup>
-  // java script
-  import Header from '@/components/Header.vue'; // @ = src, définit dans vite.config.js
+  import Header from '@/components/Header.vue';
   import Footer from '@/components/Footer.vue';
   import Boxes from '@/components/Boxes.vue';
   import Carousel from '@/components/Carousel.vue'
+
+  let carouselImages = ["2_champions_alsace.jpg", "stage_club_11_23.jpg", "sequence_combat_defense.jpg"];
 
   let BoxesContents = [{
     title: 'Actualités du club',
@@ -44,12 +43,10 @@
       place: ["Lieu", "Lyon"]
     }
   }];
-
-  //let contenuActus = FileReader();
-  //let text = contenuActus.readAsText('text/Accueil_Actus.txt');
 </script>
 
 
 <style>
+  @import '../assets/main.scss';
   @import 'bootstrap/dist/css/bootstrap.css';
 </style>

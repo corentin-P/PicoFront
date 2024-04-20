@@ -2,10 +2,22 @@ import { fileURLToPath, URL } from 'node:url'
 
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import { url } from 'node:inspector'
+import { resolve } from 'node:path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+    build: {
+      rollupOptions: {
+        input:{
+          main: resolve(__dirname, 'index.html'),
+          trainings: resolve(__dirname, 'trainings.html'),
+          tournament: resolve(__dirname, 'tournament.html'),
+          registration: resolve(__dirname, 'registration.html'),
+          gallery: resolve(__dirname, 'gallery.html'),
+          about: resolve(__dirname, 'about.html'),
+        }
+      }
+    },
     module: {
       rules: [
         {
@@ -28,4 +40,5 @@ export default defineConfig({
       vue: 'vue/dist/vue.esm-bundler.js'
     }
   },
+  base: "./"
 })

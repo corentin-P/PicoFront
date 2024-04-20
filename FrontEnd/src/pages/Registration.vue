@@ -6,13 +6,13 @@
     <Header /> 
   </header>
   <body>
-    <h1 class="center">Devenir Membre</h1>
+    <h1>Devenir Membre</h1>
     <div class="container">
       <div class="column1">
         <h4>Prérequis</h4>
         <div>
-          <ul>
-            <li v-for="p in prerequis">{{ p }}</li>
+          <ul >
+            <li style="margin-right: 10%;" v-for="p in prerequis">{{ p }}</li>
           </ul>
         </div>
       </div>
@@ -25,9 +25,9 @@
         </div>
       </div>
     </div>
-    <h2 class="center">Vous êtes prêt ?</h2>
-    <p class="center">Vous pouvez venir à une séance d’entrainement pour essayer avant de vous décider. <br> Veuillez remplir le formulaire ci dessous et l’envoyer à : president@gmail.com</p>
-    <p class="center"><a href="files/formulaire.txt" download="">Formulaire.pdf</a></p>
+    <h1 class="center">Vous êtes prêt ?</h1>
+    <p class="center text">Vous pouvez venir à une séance d’entrainement pour essayer avant de vous décider. <br> Veuillez remplir le formulaire ci dessous et l’envoyer à : president@gmail.com</p>
+    <p class="center text"><a href="files/formulaire.txt" download="">Formulaire.pdf</a></p>
   </body>
   <footer>
     <Footer />
@@ -72,5 +72,5 @@
 
 
 <style lang="scss">
-  @import '../assets/inscription.scss';
+  @import '../assets/registration.scss';
 </style>

@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
-                <img src="/images/logo.jpg" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
+                <img src="/images/logo3.png" alt="Logo" width="40" height="40" class="d-inline-block align-text-top">
                 <h3 class="navbar-title" style="margin-left: 5px; margin-top: 2px;">{{name}}</h3>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
