@@ -1,0 +1,14 @@
+{
+  "name": "open-mind-api",
+  "version": "1.0.0",
+  "description": "api pour gérer les données du site web open mind",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "author": "Corentin Piquerez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
