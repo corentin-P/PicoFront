@@ -2,3 +2,4 @@ FrontEnd/public
 Site-web-Open-Mind.code-workspace
 Backend/authentificationDB.json
 Backend/node_modules
+Backend/.env
