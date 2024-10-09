@@ -1,0 +1,9 @@
+@import "main.scss";
+
+@media only screen and (min-width: 1024px) {
+    .boxes {
+        display: flex;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+}

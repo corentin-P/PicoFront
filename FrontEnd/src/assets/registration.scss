@@ -1,0 +1,17 @@
+@import 'main.scss';
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        display: flex;
+    }
+
+    .column1 {
+        width: $box-size;
+        margin-left: 20%;
+    }
+
+    .column2 {
+        width: $box-size;
+        margin-left: 15%;
+    }
+}

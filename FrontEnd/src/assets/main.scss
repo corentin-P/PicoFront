@@ -1,0 +1,24 @@
+@import 'base.scss';
+@import "bootstrap/scss/bootstrap";
+
+$color-boxes: rgba(119, 170, 255, 1);
+$color-text-footer: rgba(255, 255, 255, 1);
+$color-links-hover-footer: rgba(119, 170, 255, 1);
+$color-background-footer: rgba(34, 34, 34, 1);
+$size-carousel: 20em;
+$color-background-carousel: rgba(208, 208, 208);
+$box-size: 30%;
+
+h1 {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.center {
+    text-align: center;
+}
+
+.text {
+    margin-left: 10%;
+    margin-right: 10%;
+}

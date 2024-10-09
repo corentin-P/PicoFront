@@ -1,3 +1,5 @@
-images
+FrontEnd/public
 Site-web-Open-Mind.code-workspace
-authentificationDB.json
+Backend/authentificationDB.json
+Backend/node_modules
+Backend/.env
