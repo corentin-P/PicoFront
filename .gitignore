@@ -1,4 +1,6 @@
 # fichiers config / générés
+public/
+package-lock.json
 
 # Logs
 logs
