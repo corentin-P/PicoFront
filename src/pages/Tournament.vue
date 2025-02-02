@@ -10,7 +10,7 @@
     <Tournament :tournaments="nextTournament" />
 
     <h1>Résultats</h1>
-    <Tournament :tournaments="res" />
+    <Tournament v-if="results" :tournaments="results" />
   </body>
   <footer>
     <Footer />
@@ -24,36 +24,39 @@
   import Header from '@/components/Header.vue'; // @ = src, définit dans vite.config.js
   import Footer from '@/components/Footer.vue';
   import Tournament from '@/components/Tournament.vue';
+  import callApi from '@/utils'
+  import { ref, watch } from 'vue'
 
-  let res = [
-    {
-      date: "01/01/1970", 
-      title: "Compétitions France", 
-      res: "1er",
-      place: "Montpellier"
-    }, 
-    {
-      date: "01/01/1970", 
-      title: "Compétitions France", 
-      res: "1er",
-      place: "Montpellier"
-    }, 
-    {
-      date: "01/01/1970", 
-      title: "Compétitions France", 
-      res: "1er",
-      place: "Montpellier"
-    }
-  ];
+  export default {
+    data() {
+      return {
+        results: null,
+        error: null,
+        
+      }
+    },
 
+    async loadResults() {
+        try{
+          const results = await callApi("GET", "/tournament/all", {})
+          console.log(results)
+        } catch (err) {
+          const error = err.toString()
+          console.log(error.value)
+        }
+      }
+  }
+
+  
   let nextTournament = [
-    {
-      date: "01/01/1970", 
-      title: "Compétitions France", 
-      res: "1er",
-      place: "Montpellier"
-    }
-  ]
+          {
+            date: "01/01/1970", 
+            title: "Compétitions France", 
+            result: "1er",
+            location: "Montpellier"
+          }
+        ]
+
 </script>
 
 
