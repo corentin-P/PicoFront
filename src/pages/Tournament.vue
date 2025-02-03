@@ -7,15 +7,18 @@
   </header>
   <body>
     <h1>Prochaines Compétitions</h1>
-    <Tournament :tournaments="nextTournament" />
-
+    <Suspense>
+       <Tournament/>
+    </Suspense>
+    <Suspense>
     <h1>Résultats</h1>
-    <Tournament v-if="results" :tournaments="results" />
-  </body>
-  <footer>
-    <Footer />
-  </footer>
-
+    <Tournament/>
+    </Suspense>
+     </body>
+     <footer>
+       <Footer />
+     </footer>
+  
 </template>
 
 
@@ -24,31 +27,24 @@
   import Header from '@/components/Header.vue'; // @ = src, définit dans vite.config.js
   import Footer from '@/components/Footer.vue';
   import Tournament from '@/components/Tournament.vue';
-  import callApi from '@/utils'
-  import { ref, watch } from 'vue'
+  
 
-  export default {
+  /*export default {
     data() {
       return {
-        results: null,
-        error: null,
-        
+        nextTournament: []
       }
-    },
+    }, 
+    mounted() {
+      callApi("GET", "/tournament/all", {})
+        .then(data => nextTournament)
+      
+    }
+  }*/
 
-    async loadResults() {
-        try{
-          const results = await callApi("GET", "/tournament/all", {})
-          console.log(results)
-        } catch (err) {
-          const error = err.toString()
-          console.log(error.value)
-        }
-      }
-  }
-
-  
-  let nextTournament = [
+  //let tournament = nextTournament[0][date];
+  // await callApi("GET", "/tournament/all", {})
+  /*let nextTournament = [
           {
             date: "01/01/1970", 
             title: "Compétitions France", 
@@ -56,7 +52,7 @@
             location: "Montpellier"
           }
         ]
-
+*/
 </script>
 
 

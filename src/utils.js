@@ -7,12 +7,14 @@ const apiUrl = import.meta.env.VITE_API_URL
  */
 async function callApi(method, route, params){
     console.log(apiUrl)
+    console.log(apiUrl + route)
     let response = await fetch(apiUrl + route, {
         method: method,
         //body: JSON.stringify(params)
     })
-
-    return await response.json()
+    response = await response.json();
+    console.log(response)
+    return response
 }
 
 export default callApi

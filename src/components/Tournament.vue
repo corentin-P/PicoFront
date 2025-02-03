@@ -8,5 +8,6 @@
 </template>
 
 <script setup>
-    let props = defineProps({tournaments: Array});
+    import callApi from '@/utils'
+    let tournaments = await callApi("GET", "/tournament/all", {})
 </script>
