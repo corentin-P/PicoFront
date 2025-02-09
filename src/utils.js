@@ -6,8 +6,6 @@ const apiUrl = import.meta.env.VITE_API_URL
  * @param {array} params : params to send
  */
 async function callApi(method, route, params){
-    console.log(apiUrl)
-    console.log(apiUrl + route)
     let response = await fetch(apiUrl + route, {
         method: method,
         //body: JSON.stringify(params)

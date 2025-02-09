@@ -9,5 +9,11 @@
 
 <script setup>
     import callApi from '@/utils'
-    let tournaments = await callApi("GET", "/tournament/all", {})
+    let props = defineProps({next : Boolean})
+    let tournaments = []
+    if (props.next) {
+        tournaments = await callApi("GET", "/tournament/all-next", {})
+    } else {
+        tournaments = await callApi("GET", "/tournament/all-last", {})
+    }
 </script>
