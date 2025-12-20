@@ -4,7 +4,7 @@ Frontend repository for a first version of open-mind website.
 
 Developped with VueJS. 
 
-First static version (without API) can be consulted [here](open-mind.corentin-piquerez.fr)
+First static version (without API) can be consulted [here](https://open-mind.corentin-piquerez.fr)
 
 ## Project Setup
 
