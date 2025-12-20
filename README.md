@@ -1,14 +1,10 @@
 # Frontend
 
-This template should help get you started developing with Vue 3 in Vite.
+Frontend repository for a first version of open-mind website. 
 
-## Recommended IDE Setup
+Developped with VueJS. 
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+First static version (without API) can be consulted [here](open-mind.corentin-piquerez.fr)
 
 ## Project Setup
 
